@@ -2,9 +2,11 @@
     <view class="order-staus item-box">订单状态：等待付款</view>
     <!-- 物流信息，发货了才有 -->
     <view class="order-logistics  item-box">
-        <text class="iconfont icon-right"></text>
-        <view class="row num">申通E物流 运单号：20342342</view>
-        <view class="row">暂无物流详情</view>
+        <navigator hover-class='none' url='../orderPackge/orderPackge'>
+            <text class="iconfont icon-right"></text>
+            <view class="row num">申通E物流 运单号：20342342</view>
+            <view class="row">暂无物流详情</view>
+        </navigator>
     </view>
     <!-- 地址信息 支付了的有-->
     <view class="order-adress item-box">
@@ -77,10 +79,10 @@
     </view>
 
     <view class="order-btn-group">
-        <view class='ul'>
-            <view class='li'><navigator hover-class='none' url=''>改价</navigator></view>
-            <view class='li'><navigator hover-class='none' url=''>关闭</navigator></view>
-            <view class='li'><navigator hover-class='none' url=''>备注</navigator></view>
+        <view class="ul">
+            <view class="li"><navigator hover-class='none' url="../orderChangePrice/orderChangePrice">改价</navigator></view>
+            <view class="li"><navigator hover-class='none' url="../orderClose/orderClose">关闭</navigator></view>
+            <view class="li"><navigator hover-class='none' url="../orderRemark/orderRemark">备注</navigator></view>
         </view>
     </view>
 

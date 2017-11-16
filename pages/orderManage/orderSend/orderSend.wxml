@@ -19,7 +19,7 @@
         <view class="bd">
             <view class="ul">
                 <view class="li">
-                    <navigator hover-class='none' url="">
+                    <navigator hover-class='none' url="../orderSelecexpress/orderSelecexpress">
                         <text class="iconfont icon-right"></text>
                         <text>请选择物流公司</text>
                     </navigator>
@@ -36,30 +36,18 @@
         <view class="shop-item">
             <view class="item-hd">
                 <text class="num">2件</text>
-                <label><radio/>全选</label>
+                <label><radio></radio>全选</label>
             </view>
             <view class="item-bd">
-                <view class="goods clearfix">
-                    <label><radio/></label>
+                <view class="goods clearfix" wx:for='{{[1,2,3]}}'>
+                    <label>
+                        <radio></radio>
+                    </label>
                     <view class="pic"> <image  src='/images/img_bb.png'></image></view>
                     <view class="detail">
                         <view class="row">
                             <view class="name"><navigator hover-class='none' url=''>纯棉水洗六件套</navigator></view>
                             <text>￥200</text> 
-                        </view>
-                        <view class="row">
-                            <text class="color">颜色：红色</text>
-                            <text>x1</text>
-                        </view>
-                    </view>
-                </view>
-                <view class="goods clearfix">
-                    <label><radio/></label>
-                    <view class="pic"> <image  src='/images/img_bb.png'></image></view>
-                    <view class="detail">
-                        <view class="row">
-                            <view class="name"><navigator hover-class='none' url=''>纯棉水洗六件套</navigator></view>
-                            <text>￥200</text>
                         </view>
                         <view class="row">
                             <text class="color">颜色：红色</text>
