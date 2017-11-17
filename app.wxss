@@ -142,16 +142,21 @@ checkbox{
     position: relative;
     flex: 1;
     text-align: center;
-    color: #888;
-    margin: 5px 0;
+    padding: 4px 0 6px;
     z-index: 10;
+}
+.tabBar .tabBar-item .pic image{
+    width: 28px;
+    height: 27px;
+    margin-bottom: 3px;
 }
 .tabBar .tabBar-item .iconfont{
     font-size: 20px;
     
 }
 .tabBar .tabBar-item .text{
-    font-size: 14px;
+    line-height: 1;
+    font-size: 11px;
 }
 .tabBar .tabBar-item .drop-list{
     position: absolute;
@@ -176,235 +181,6 @@ checkbox{
 }
 .tabBar~view{
     padding-bottom: 50px;
-}
-
-/*  ----------商品列表--------  */
-
-/*默认大图列表  */
-.goods-list{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-.goods-list .item{
-    width: 100%;
-    margin-bottom: 10px;
-}
-.goods-list .item-inner{
-    position: relative;
-    background: #fff;
-}
-.goods-list image{
-    width: 100%;
-    height: 300px;
-    display: block;
-}
-.goods-list .desc{
-    padding: 10px;
-}
-.goods-list .title{
-    line-height: 22px;
-}
-.goods-list .content{
-    color: #1aad19;
-}
-.goods-list .desc .content{
-    line-height: 30px;
-}
-.goods-list .desc .content .iconfont{
-    float: right;
-    font-size: 20px;
-}
-
-/*小图列表  */
-.goods-list.small-list{
-    padding: 5px;
-}
-.goods-list.small-list .item{
-    width: 50%;
-    margin-bottom: 0;
-}
-.goods-list.small-list .item-inner{
-    margin: 5px;
-}
-.goods-list.small-list image{
-    height: 170px;
-}
-.goods-list.small-list .desc{
-    padding: 10px 10px 5px;
-}
-.goods-list.small-list .title{
-    height: 44px;
-    overflow: hidden;
-}
-
-/* 一大两小  */
-.goods-list.big-small{
-    padding: 5px;
-}
-.goods-list.big-small .item{
-    width: 50%;
-}
-.goods-list.big-small .item-inner{
-    margin: 5px;
-}
-.goods-list.big-small image{
-    height: 170px;
-}
-.goods-list.big-small .title{
-    height: 44px;
-    overflow: hidden;
-}
-.goods-list.big-small .item:nth-child(3n-2){
-    width: 100%;
-    margin: 0;
-}
-.goods-list.big-small .item:nth-child(3n-2) image{
-    height: 300px;
-}
-
-/*列表形式   */
-.goods-list.inline-list .item-inner{
-    padding: 10px;
-}
-.goods-list.inline-list .pic{
-    float: left;
-}
-.goods-list.inline-list .pic image{
-    width: 100px;
-    height: 100px;
-}
-.goods-list.inline-list .desc{
-    margin-left: 110px;
-    padding: 0;
-    position: relative;
-    height: 100px;
-}
-.goods-list.inline-list .content{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-/* 极简模式 */
-.goods-list.simple-style{
-    padding: 10px 0;
-}
-.goods-list.simple-style .desc{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, .8);
-    color: #fff;
-    padding: 5px 10px;
-    box-sizing: border-box;
-}
-.goods-list.simple-style .desc .title{
-    float: left;
-    width: 60%;
-    height: 30px;
-    line-height: 30px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.goods-list.simple-style .desc .content{
-    text-align: right;
-    color: #fff;
-}
-.goods-list.simple-style .desc .content .iconfont{
-    display: none
-}
-
-/* 小图的极简模式 */
-.goods-list.simple-style.small-list .desc{
-    width: auto;
-    padding: 0 10px;
-}
-.goods-list.simple-style.small-list .title{
-    display: none;
-}
-
-/*大小图的极简模式  */
-.goods-list.simple-style.big-small .item:nth-child(3n-1) .desc,.goods-list.simple-style.big-small .item:nth-child(3n) .desc{
-    width: auto;
-    padding: 0 10px;
-}
-.goods-list.simple-style.big-small .item:nth-child(3n-1) .title,.goods-list.simple-style.big-small .item:nth-child(3n) .title{
-    display: none;
-}
-.goods-list.simple-style.inline-list .desc{
-    position: relative;
-    background: none;
-    color: #333;
-    width: auto;
-    
-}
-
-/* 列表的极简模式  */
-.goods-list.simple-style.inline-list .desc{
-    padding: 10px 0 0 0;
-}
-.goods-list.simple-style.inline-list .desc .content{
-    color: #1aad19;
-    text-align: left;
-}
-.goods-list.simple-style.inline-list .desc .title{
-    width: 100%;
-    line-height: 22px;
-    height: 44px;
-}
-.goods-list.simple-style.inline-list .desc .content .iconfont{
-    display: block;
-}
-
-/*   无标题  */
-.goods-list.notitle .title{
-    display: none !important;
-}
-
-/*  无价格  */
-.goods-list.noprice .price{
-    display: none !important;
-}
-.goods-list.noprice .iconfont{
-    float: none !important;
-}
-
-/*  无购物车  */
-.goods-list.nocar .iconfont{
-    display: none !important;
-}
-
-
-/*其他N种组合，由于样式细节调整，导致这块的不可描述，自己看class命名理解吧！！！！  */
-.goods-list.notitle .desc{
-    padding: 5px 10px !important;
-}
-.goods-list.noprice.notitle .desc,.goods-list.noprice.notitle.nocar .desc{
-    padding: 0 !important;
-}
-.goods-list.noprice.notitle .iconfont{
-    position: absolute;
-    right: 10px;
-    bottom: 5px;
-}
-
-.goods-list.notitle.nocar .desc{
-    padding: 5px 10px !important
-}
-.goods-list.small-list.notitle.nocar .desc{
-    padding: 0px 10px !important
-}
-.goods-list.inline-list.notitle .title{
-    display: block !important;
-}
-.goods-list.inline-list.noprice .price{
-    display: block !important;
-}
-.goods-list.inline-list.noprice .iconfont{
-    float: right !important;
 }
 
 
@@ -433,7 +209,6 @@ checkbox{
 .main-tabs+.list-wrap{
     padding-top: 54px;
 }
-/*  ----------商品列表--------  */
 /* 左标题，又输入框 */
 /* 公用表单，例如修改密码 */
 .form-list{
@@ -851,4 +626,3 @@ checkbox{
 .order-manage-list .shop-item .item-ft .order-ctrl .li navigator {
     display: block
 }
-/* ---------订单管理-订单详情---------- */

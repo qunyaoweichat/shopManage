@@ -1,11 +1,11 @@
-// pages/shopManage/index.js
+var tabBar = require("../public/tabBar.js");
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        shopNumber:0
+        
     },
 
     /**
@@ -18,11 +18,8 @@ Page({
             shopNumber: shopNumber
         })
     },
-
-    creatShop: function () {
-        wx.navigateTo({
-            url: './createShop/index',
-        })
+    goShop:function(e){
+        tabBar.navCtrl(e.currentTarget.dataset.url)
     },
     /**
      * 生命周期函数--监听页面初次渲染完成
