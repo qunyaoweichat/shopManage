@@ -4,19 +4,7 @@
         <view class="hd">申通E物流，运单号：234234251</view>
         <view class="bd">
             <view class="ul clearfix">
-                <view class="li">
-                    <view class="pic">
-                        <image src='/images/img_bb.png'></image>
-                    </view>
-                    <view class="num">x1</view>
-                </view>
-                <view class="li">
-                    <view class="pic">
-                        <image src='/images/img_bb.png'></image>
-                    </view>
-                    <view class="num">x1</view>
-                </view>
-                <view class="li">
+                <view class="li" wx:for='{{[1,2,3]}}'>
                     <view class="pic">
                         <image src='/images/img_bb.png'></image>
                     </view>
@@ -31,31 +19,11 @@
 
     <!-- 物流 -->
     <view class='logistics-list item-box'>
-        <view class='gz'>
+        <view class='gz' wx:for='{{[1,2,3,4,5,6,7]}}'>
             <view class='dz'>感谢您在店铺消费，卖家已发货</view>
             <view class='time'>2016-09-08 12:08:08</view>
         </view>
-        <view class='gz'>
-            <view class='dz'>感谢您在店铺消费，卖家已发货</view>
-            <view class='time'>2016-09-08 12:08:08</view>
-        </view>
-        <view class='gz' >
-            <view class='dz'>感谢您在店铺消费，卖家已发货</view>
-            <view class='time'>2016-09-08 12:08:08</view>
-        </view>
-        <view class='gz'>
-            <view class='dz'>感谢您在店铺消费，卖家已发货</view>
-            <view class='time'>2016-09-08 12:08:08</view>
-        </view>
-        <view class='gz'>
-            <view class='dz'>感谢您在店铺消费，卖家已发货</view>
-            <view class='time'>2016-09-08 12:08:08</view>
-        </view>
-        <view class='gz'>
-            <view class='dz'>感谢您在店铺消费，卖家已发货</view>
-            <view class='time'>2016-09-08 12:08:08</view>
-        </view>
-    </view>
+    </view>   
 
 
 </view>

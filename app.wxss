@@ -551,7 +551,7 @@ checkbox{
 }
 .order-manage-list .shop-item .item-hd {
     line-height: 20px;
-    padding: 10px 15px;
+    padding: 10px 12px;
 }
 .order-manage-list .shop-item .item-hd .row {
     display: flex;
@@ -574,7 +574,7 @@ checkbox{
 }
 .order-manage-list .shop-item .item-bd .goods {
     border-bottom: 1px solid #ddd;
-    padding: 10px 15px;
+    padding: 10px 12px;
 }
 .order-manage-list .shop-item .item-bd .goods .pic {
     float: left;

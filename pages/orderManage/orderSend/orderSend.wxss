@@ -39,10 +39,10 @@
 .order-send .order-manage-list .item-hd .num{
     float: right;
 }
-.order-send .order-manage-list radio{
-    height: 10px;
-}
 .order-send .order-manage-list .item-bd radio{
     float: left;
     margin-top: 15px;
+}
+.order-send  radio{
+    transform:scale(.8);
 }
