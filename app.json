@@ -1,5 +1,6 @@
 {
     "pages": [
+        
         "pages/index/index",
         "pages/shopChoice/shopChoice",
         "pages/shopGrade/shopGrade",
@@ -11,6 +12,7 @@
         "pages/shopSet/shopSet",
         "pages/createShop/branchSuccess/branchSuccess",
         "pages/createShop/branchShop/branchShop",
+        "pages/createShop/branchPower/branchPower",
         "pages/orderManage/orderRemark/orderRemark",
         "pages/orderManage/orderRefundRefuse/orderRefundRefuse",
         "pages/orderManage/orderRefundHandle/orderRefundHandle",
@@ -38,6 +40,8 @@
         "pages/assets/shopRevenueRecord/shopRevenueRecord",
         "pages/assets/shopBalance/shopBalance",
         "pages/assets/shopRevenue/shopRevenue"
+        
+        
 
     ],
     "window": {
