@@ -1,0 +1,27 @@
+
+<view class="tabBar">
+    <view class='tabBar-item' bindtap='goShop' data-url='index'>
+        <view class='pic'>
+            <image src='/images/tabBar-index.png'></image>
+        </view>
+        <view class='text'>首页{{tabBar.msg}}</view>
+    </view>
+    <view class='tabBar-item' >
+        <view class='pic'>
+            <image src='/images/tabBar-shopManage-on.png'></image>
+        </view>
+        <view class='text'>店铺管理</view>
+    </view>
+    <view class='tabBar-item' bindtap='goShop' data-url='car'>
+        <view class='pic'>
+            <image src='/images/tabBar-car.png'></image>
+        </view>
+        <view class='text'>购物车</view>
+    </view>
+    <view class='tabBar-item' bindtap='goShop' data-url='mine'>
+        <view class='pic'>
+            <image src='/images/tabBar-mine.png'></image>
+        </view>
+        <view class='text'>我的</view>
+    </view>
+</view>

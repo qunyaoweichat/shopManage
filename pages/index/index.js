@@ -13,11 +13,17 @@ Page({
      */
     onLoad: function (options) {
         // 判断是否有店铺如果没给让去开店的按钮
-        var shopNumber =1;
+        var shopNumber =0;
         this.setData({
             shopNumber: shopNumber
         })
+        if (shopNumber==0){
+            wx.redirectTo({
+                url: '../createShop/branchShop/branchShop',
+            })
+        }
     },
+    // tabBar 的跳转
     goShop:function(e){
         tabBar.navCtrl(e.currentTarget.dataset.url)
     },
