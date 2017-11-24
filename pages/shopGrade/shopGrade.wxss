@@ -18,7 +18,7 @@
 	color: #fff;
 	font-weight: bold;
 }
-.shop-grade .item .title text{
+.shop-grade .item .title navigator{
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -47,26 +47,21 @@
 .shop-grade .grade .inner .shop{
 	padding: 20px 0;
 }
-.shop-grade .grade .inner .shop .row{
-	display: flex;
-	padding: 10px;
+.shop-grade .grade .inner .shop .grade-inner{
+    width: 50%;
+    margin-top: 10px;
+    float: left;
+    text-align: center;
 }
-.shop-grade .grade .inner .shop .row navigator{
-	flex: 1;	
-}
-.shop-grade .grade .inner .shop .row .class{
-	text-align: center;
-	min-width: 0;
-}
-.shop-grade .grade .inner .shop .row .class image{
+.shop-grade .grade .inner .shop .grade-inner .class image{
 	width:50%;
 }
-.shop-grade .grade .inner .shop .row .class view{
+.shop-grade .grade .inner .shop .grade-inner .class view{
 	line-height: 40px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-.shop-grade .grade .inner .shop .row .class view text{
+.shop-grade .grade .inner .shop .grade-inner .class view text{
 	color:#41B2FF ;
 }
